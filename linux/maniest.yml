@@ -10,3 +10,4 @@ build-depdendencies:
   - flex
   - bison
   - perl
+  - musl
