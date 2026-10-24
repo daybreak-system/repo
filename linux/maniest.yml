@@ -1,0 +1,12 @@
+description: The Linux kernel
+upstream: https://kernel.org/
+version: "7.3"
+license: GPL-2
+build-depdendencies:
+  - clang
+  - llvm
+  - make
+  - bc
+  - flex
+  - bison
+  - perl
