@@ -1,0 +1,6 @@
+description: musl is an implementation of the C standard library built on top of the Linux system call API
+upstream: https://musl.libc.org/
+version: "1.2.6"
+build-dependencies:
+  - make
+  - clang
