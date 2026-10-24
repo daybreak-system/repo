@@ -12,7 +12,8 @@ yes "" | make localmodconfig
   -d DEBUG_INFO_DWARF5 -e CONFIG_DEBUG_INFO_NONE
 make olddefconfig
 
-make LLVM=1
+
+make LLVM=1 CC=clang
 
 make INSTALL_MOD_PATH="$1" modules_install
 mkdir -p $1/boot
