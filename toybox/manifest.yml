@@ -1,0 +1,4 @@
+description: All-in-one Linux command line.
+version: "0.8.9"
+build-dependencies:
+  - make
