@@ -7,8 +7,7 @@ cd musl-1.2.6
 
 CC=clang ./configure \
   --prefix=/usr \
-  --syslibdir=/lib \
-  --target=x86_64-linux-musl
+  --syslibdir=/lib
 
 make
 make DESTDIR="$1" install
