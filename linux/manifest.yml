@@ -11,3 +11,4 @@ build-depdendencies:
   - bison
   - perl
   - musl
+  - elfutils
