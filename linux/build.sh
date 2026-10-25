@@ -9,9 +9,9 @@ echo "-daybreak" > localversion
 yes "" | make LLVM=1 localmodconfig
 ./scripts/config --file .config -d DEBUG_INFO \
   -d DEBUG_INFO_DWARF_TOOLCHAIN_DEFAULT -d DEBUG_INFO_DWARF4 \
-  -d DEBUG_INFO_DWARF5 -d DEBUG_INFO_BTF -e CONFIG_DEBUG_INFO_NONE
+  -d DEBUG_INFO_DWARF5 -d DEBUG_INFO_BTF -e CONFIG_DEBUG_INFO_NONE \
+  -d LOCALVERSION_AUTO
 make LLVM=1 olddefconfig
-
 
 make LLVM=1
 
