@@ -8,4 +8,4 @@ cd mrsh-master
 CC=clang ./configure  --without-readline
 make
 mkdir "$1/bin"
-cp ./marsh "$1/bin"
+cp ./mrsh "$1/bin"
