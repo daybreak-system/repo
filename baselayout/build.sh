@@ -2,9 +2,9 @@
 set -eu
 
 mkdir -m 755 -p \
-  "$1/bin"
-  "$1/sbin"
-  "$1/lib"
+  "$1/bin" \
+  "$1/sbin" \
+  "$1/lib" \
   "$1/usr/bin" \
   "$1/usr/sbin" \
   "$1/usr/include" \
