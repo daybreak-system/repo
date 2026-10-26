@@ -2,6 +2,9 @@
 set -eu
 
 mkdir -m 755 -p \
+  "$1/bin"
+  "$1/sbin"
+  "$1/lib"
   "$1/usr/bin" \
   "$1/usr/sbin" \
   "$1/usr/include" \
@@ -31,10 +34,6 @@ mkdir -m 750 -p "$1/root"
 mkdir -m 1777 -p \
   "$1/tmp" \
   "$1/var/tmp"
-
-ln -s usr/bin "$1/bin"
-ln -s usr/sbin "$1/sbin"
-ln -s usr/lib "$1/lib"
 
 ln -s ../run "$1/var/run"
 ln -s ../run/lock "$1/var/lock"
