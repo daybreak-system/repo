@@ -7,8 +7,10 @@ build-dependencies:
   - make
   - zlib
   - libcurl
+  - musl
 runtime-dependencies:
   - zlib
   - libcurl
   - ca-certificates
   - mrsh
+  - musl

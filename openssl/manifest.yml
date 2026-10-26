@@ -1,0 +1,11 @@
+description: General purpose TLS and crypto library
+upstream: https://openssl-library.org/
+version: "4.1.0"
+license: Apache-2.0
+build-dependencies:
+  - clang
+  - make
+  - perl
+  - musl
+runtime-dependencies:
+  - musl

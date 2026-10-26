@@ -1,0 +1,15 @@
+description: library for transferring data with URLs
+upstream: https://curl.se/
+version: "8.23.0"
+license: curl
+build-dependencies:
+  - clang
+  - make
+  - zlib
+  - openssl
+  - musl
+runtime-dependencies:
+  - zlib
+  - openssl
+  - ca-certificates
+  - musl

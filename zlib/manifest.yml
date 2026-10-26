@@ -1,7 +1,10 @@
-description: A Massively Spiffy Yet Delicately Unobtrusive Compression Library
+description: Massively Spiffy Yet Delicately Unobtrusive Compression Library
 upstream: https://zlib.net/
 version: "1.3.2"
 license: zlib
 build-dependencies:
   - clang
   - make
+  - musl
+runtime-dependencies:
+  - musl
