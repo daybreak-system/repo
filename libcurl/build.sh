@@ -5,7 +5,7 @@ wget https://curl.se/download/curl-8.23.0.tar.xz
 tar -xf curl-8.23.0.tar.xz
 cd curl-8.23.0
 
-CC=clang /.configure \
+CC=clang ./configure \
   --prefix=/usr \
   --with-openssl \
   --with-zlib \
@@ -15,7 +15,8 @@ CC=clang /.configure \
   --without-zstd \
   --without-libidn2 \
   --disable-static \
-  --enable-shared
+  --enable-shared \
+  --disable-tool
 
 make
 make DESTDIR="$1" install
