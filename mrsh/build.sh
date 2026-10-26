@@ -7,5 +7,5 @@ cd mrsh-master
 
 CC=clang ./configure  --without-readline
 make
-mkdir "$1/bin"
-cp ./mrsh "$1/bin"
+mkdir "$1/usr/bin"
+cp ./mrsh "$1/usr/bin"
