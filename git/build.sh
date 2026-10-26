@@ -12,7 +12,7 @@ make \
   NO_GETTEXT=YesPlease \
   NO_EXPAT=YesPlease \
   NO_TCLTK=YesPlease \
-  REG_STARTEND=NeedsStartEnd \
+  REGEX=NeedsStartEnd \
   all
 
 make \
@@ -22,6 +22,6 @@ make \
   NO_GETTEXT=YesPlease \
   NO_EXPAT=YesPlease \
   NO_TCLTK=YesPlease \
-  REG_STARTEND=NeedsStartEnd \
+  REGEX=NeedsStartEnd \
   DESTDIR="$1" \
   install
