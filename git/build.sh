@@ -13,6 +13,7 @@ make \
   NO_EXPAT=YesPlease \
   NO_TCLTK=YesPlease \
   NO_REGEX=NeedsStartEnd \
+  NO_RUST=1 \
   all
 
 make \
@@ -23,5 +24,6 @@ make \
   NO_EXPAT=YesPlease \
   NO_TCLTK=YesPlease \
   NO_REGEX=NeedsStartEnd \
+  NO_RUST=1 \
   DESTDIR="$1" \
   install
