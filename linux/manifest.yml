@@ -2,7 +2,7 @@ description: The Linux kernel
 upstream: https://kernel.org/
 version: "7.3"
 license: GPL-2
-build-depdendencies:
+build-dependencies:
   - clang
   - llvm
   - make

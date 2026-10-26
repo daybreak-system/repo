@@ -1,0 +1,14 @@
+description: free and open source distributed version control system
+upstream: https://git-scm.org/
+version: "2.56.0"
+license: GPL-2
+build-dependencies:
+  - clang
+  - make
+  - zlib
+  - libcurl
+runtime-dependencies:
+  - zlib
+  - libcurl
+  - ca-certificates
+  - mrsh
