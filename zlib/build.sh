@@ -2,7 +2,7 @@
 set -eu
 
 wget https://zlib.net/zlib-1.3.2.tar.xz
-tar -xf zlib-1.3.2
+tar -xf zlib-1.3.2.tar.xz
 cd zlib-1.3.2
 
 CC=clang ./configure --prefix=/usr --shared
