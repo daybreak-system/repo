@@ -3,6 +3,7 @@ upstream: https://landley.net/toybox/
 version: "0.8.15"
 license: 0BSD
 build-dependencies:
+  - bash
   - clang
   - make
 runtime-dependencies:
