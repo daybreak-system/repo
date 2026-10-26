@@ -36,8 +36,8 @@ ln -s usr/bin "$1/bin"
 ln -s usr/sbin "$1/sbin"
 ln -s usr/lib "$1/lib"
 
-ln -s /run "$1/var/run"
-ln -s /run/lock "$1/var/lock"
+ln -sf /run "$1/var/run"
+ln -sf /run/lock "$1/var/lock"
 
 ln -s /proc/self/mounts "$1/etc/mtab"
 
