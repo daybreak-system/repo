@@ -5,3 +5,5 @@ license: MIT
 build-dependencies:
   - clang
   - make
+runtime-dependencies:
+  - musl
