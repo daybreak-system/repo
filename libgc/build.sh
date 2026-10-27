@@ -9,7 +9,9 @@ cmake -B build_cmake \
   -DCMAKE_C_COMPILER=clang \
   -DCMAKE_C_FLAGS="-target x86_64-unknown-linux-musl" \
   -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=lld -target x86_64-unknown-linux-musl" \
-  -DCMAKE_INSTALL_PREFIX="/usr/local"
+  -DCMAKE_EXE_LINKER_FLAGS="-fuse-ld=lld -target x86_64-unknown-linux-musl" \
+  -DCMAKE_INSTALL_PREFIX="/usr/local" \
+  -Dhandle_fork=OFF
 
 cmake --build build_cmake
 cmake --install build_cmake --destdir "$1"
