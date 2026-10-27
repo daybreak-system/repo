@@ -14,4 +14,4 @@ cmake -B build_cmake \
   -DHAVE_GETCONTEXT=OFF
 
 cmake --build build_cmake
-cmake --install build_cmake --destdir "$1"
+cmake --install build_cmake --destdir "$(realpath "$1")"
