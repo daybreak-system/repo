@@ -1,0 +1,9 @@
+description: Boehm-Demers-Weiser conservative C/C++ Garbage Collector
+upstream: https://hboehm.ifno/gc/
+version: "10.49"
+license: BSD-3-Clause WITH PCRE2-exception
+build-dependencies:
+  - clang
+  - musl
+runtime-dependencies:
+  - musl

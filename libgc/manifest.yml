@@ -1,0 +1,9 @@
+description: Boehm-Demers-Weiser conservative C/C++ Garbage Collector
+upstream: https://hboehm.ifno/gc/
+version: "8.2.8"
+license: Boehm-GC
+build-dependencies:
+  - clang
+  - musl
+runtime-dependencies:
+  - musl
