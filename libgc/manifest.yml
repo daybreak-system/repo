@@ -4,6 +4,7 @@ version: "8.2.8"
 license: Boehm-GC
 build-dependencies:
   - clang
+  - cmake
   - musl
 runtime-dependencies:
   - musl
