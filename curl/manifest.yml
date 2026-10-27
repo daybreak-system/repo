@@ -1,4 +1,4 @@
-description: library for transferring data with URLs
+description: command line tool and library for transferring data with URLs
 upstream: https://curl.se/
 version: "8.23.0"
 license: curl

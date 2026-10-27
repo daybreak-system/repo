@@ -6,11 +6,11 @@ build-dependencies:
   - clang
   - make
   - zlib
-  - libcurl
+  - curl
   - musl
 runtime-dependencies:
   - zlib
-  - libcurl
+  - curl
   - ca-certificates
   - mrsh
   - musl

@@ -15,8 +15,7 @@ CC=clang ./configure \
   --without-zstd \
   --without-libidn2 \
   --disable-static \
-  --enable-shared \
-  --disable-tool
+  --enable-shared
 
 make
 make DESTDIR="$1" install
