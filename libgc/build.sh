@@ -11,7 +11,7 @@ cmake -B build_cmake \
   -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=lld -target x86_64-unknown-linux-musl" \
   -DCMAKE_EXE_LINKER_FLAGS="-fuse-ld=lld -target x86_64-unknown-linux-musl" \
   -DCMAKE_INSTALL_PREFIX="/usr/local" \
-  -Dhandle_fork=OFF
+  -DHAVE_GETCONTEXT=OFF
 
 cmake --build build_cmake
 cmake --install build_cmake --destdir "$1"
