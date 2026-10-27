@@ -10,6 +10,7 @@ cmake -G Ninja -S llvm -B build \
   -DCMAKE_INSTALL_PREFIX=/usr \
   -DCMAKE_C_COMPILER=clang \
   -DCMAKE_CXX_COMPILER=clang++ \
+  -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
   -DCMAKE_REQUIRED_FLAGS="-stdlib=libc++" \
   -DCMAKE_REQUIRED_INCLUDES="/usr/include/c++/v1" \
   -DCMAKE_CXX_FLAGS="-stdlib=libc++ -cxx-isystem /usr/include/c++/v1 -D_LIBCPP_PROVIDES_DEFAULT_RUNE_TABLE" \
