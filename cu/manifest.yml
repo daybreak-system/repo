@@ -6,14 +6,14 @@ build-dependencies:
   - crystal
   - clang
   - libc++
-  - yaml
-  - pcre2
-  - bdwcgc
+  - libyaml
+  - libpcre2
+  - libgc
   - git
 runtime-dependencies:
   - musl
   - libyaml
-  - libunwind
+  - libc++
   - libgc
   - libpcre2
   - git
