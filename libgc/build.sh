@@ -3,7 +3,7 @@ set -eu
 
 wget https://www.hboehm.info/gc/gc_source/gc-8.2.8.tar.gz
 tar -xf gc-8.2.8.tar.gz
-cd gc-8.2.7
+cd gc-8.2.8
 
 cmake -B build_cmake \
   -DCMAKE_C_COMPILER=clang \
