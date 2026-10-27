@@ -1,7 +1,7 @@
 description: The Linux kernel
 upstream: https://kernel.org/
 version: "7.3"
-license: GPL-2
+license: GPL-2.0-only WITH Linux-syscall-note
 build-dependencies:
   - clang
   - llvm

@@ -1,7 +1,7 @@
 description: Massively Spiffy Yet Delicately Unobtrusive Compression Library
 upstream: https://zlib.net/
 version: "1.3.2"
-license: zlib
+license: Zlib
 build-dependencies:
   - clang
   - make
