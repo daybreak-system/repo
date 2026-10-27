@@ -5,6 +5,7 @@ license: Boehm-GC
 build-dependencies:
   - clang
   - cmake
+  - libucontext
   - musl
 runtime-dependencies:
   - musl
