@@ -10,10 +10,10 @@ cmake -G Ninja -S llvm -B build \
   -DCMAKE_INSTALL_PREFIX=/usr \
   -DCMAKE_C_COMPILER=clang \
   -DCMAKE_CXX_COMPILER=clang++ \
-  -DCMAKE_CXX_FLAGS="-stdlib=libc++" \
+  -DCMAKE_CXX_FLAGS="-stdlib=libc++ -D_LIBCPP_PROVIDES_DEFAULT_RUNE_TALBE" \
   -DLLVM_ENABLE_PROJECTS="clang;lld" \
   -DLLVM_TARGETS_TO_BUILD=X86 \
-  -DLLVM_DEFAULT_TARGET_TRIPLE=x86_64-unknown-linux-musl \
+  -DLLVM_DEFAULT_TARGET_TRIPLE="x86_64-unknown-linux-musl" \
   -DLLVM_ENABLE_LIBCXX=ON \
   -DLLVM_USE_LINKER=lld \
   -DCLANG_DEFAULT_CXX_STDLIB=libc++ \
