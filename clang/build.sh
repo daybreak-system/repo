@@ -23,7 +23,8 @@ cmake -G Ninja -S llvm -B build \
   -DLLVM_USE_LINKER=lld \
   -DCLANG_DEFAULT_CXX_STDLIB=libc++ \
   -DCLANG_DEFAULT_LINKER=lld \
-  -DLLVM_ENABLE_ZLIB=ON
+  -DLLVM_ENABLE_ZLIB=ON \
+  -DLLVM_ENABLE_ZSTD=OFF
 
 cmake --build build
 DESTDIR="$1" cmake --install build
