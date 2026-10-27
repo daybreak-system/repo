@@ -3,7 +3,7 @@ set -eu
 
 wget https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/pcre2-10.49.tar.gz
 tar -xf pcre2-10.49.tar.gz
-cd pcre2-10.49.tar.gz
+cd pcre2-10.49
 
 ./configure \
   CC="clang" \
