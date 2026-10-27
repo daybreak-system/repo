@@ -12,7 +12,7 @@ cmake -G Ninja -S llvm -B build \
   -DCMAKE_CXX_COMPILER=clang++ \
   -DCMAKE_REQUIRED_FLAGS="-stdlib=libc++" \
   -DCMAKE_REQUIRED_INCLUDES="/usr/include/c++/v1" \
-  -DCMAKE_CXX_FLAGS="-stdlib=libc++ -D_LIBCPP_PROVIDES_DEFAULT_RUNE_TABLE" \
+  -DCMAKE_CXX_FLAGS="-stdlib=libc++ -cxx-isystem /usr/include/c++/v1 -D_LIBCPP_PROVIDES_DEFAULT_RUNE_TABLE" \
   -DCMAKE_EXE_LINKER_FLAGS="-stdlib=libc++" \
   -DCMAKE_SHARED_LINKER_FLAGS="-stdlib=libc++ " \
   -DLLVM_ENABLE_PROJECTS="clang;lld" \
