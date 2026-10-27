@@ -7,5 +7,7 @@ build-dependencies:
   - bash
   - clang
   - make
+  - openssl
 runtime-dependencies:
   - musl
+  - openssl
