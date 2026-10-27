@@ -5,7 +5,7 @@ license: NONE
 build-dependencies:
   - crystal
   - clang
-  - libc++
+  - libcxx
   - yaml
   - pcre2
   - gc
@@ -13,7 +13,7 @@ build-dependencies:
 runtime-dependencies:
   - musl
   - yaml
-  - libc++
+  - libcxx
   - gc
   - pcre2
   - git
