@@ -9,3 +9,4 @@ build-dependencies:
   - musl
 runtime-dependencies:
   - musl
+  - ca-certificates
