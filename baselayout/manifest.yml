@@ -1,4 +1,4 @@
-description: fundamental directory structure and essential files for daybreak
-upstream: https://github.com/rudyon/daybreak-repo
-version: "0.1"
+description: base directory tree and essential files for daybreak
+upstream: https://github.com/daybreak-system/repo
+version: "NONE"
 license: NONE
