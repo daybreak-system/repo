@@ -1,7 +1,8 @@
-description: musl is an implementation of the C standard library
+description: an implementation of the C standard library
 upstream: https://musl.libc.org/
 version: "1.2.6"
 license: MIT
 build-dependencies:
   - make
   - clang
+  - lld

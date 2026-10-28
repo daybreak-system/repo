@@ -1,13 +1,19 @@
 #!/bin/sh
 set -eu
 
+CUSTAGE=$1
+CUROOT=$2
+
 wget https://musl.libc.org/releases/musl-1.2.6.tar.gz
 tar -xf musl-1.2.6.tar.gz
 cd musl-1.2.6
 
-CC=clang ./configure \
+CC=clang \
+CFLAGS="-target x86_64-unknown-linux-musl -fuse-ld=lld" \
+./configure \
+  --target=x86_64-unknown-linux-musl \
   --prefix=/usr \
   --syslibdir=/lib
 
 make
-make DESTDIR="$1" install
+make DESTDIR="$CUSTAGE" install
