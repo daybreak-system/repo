@@ -6,6 +6,7 @@ tar -xf openssl-4.1.0.tar.gz
 cd openssl-4.1.0
 
 CC=clang ./Configure linux-x86_64 \
+  --prefix=/usr \
   --openssldir=/etc/ssl \
   shared
 
