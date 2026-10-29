@@ -1,4 +1,4 @@
-description: all-in-one Linux command line.
+description: all-in-one Linux command line
 upstream: https://landley.net/toybox/
 version: "0.8.15"
 license: 0BSD
