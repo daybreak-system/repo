@@ -1,9 +1,0 @@
-description: YAML parser and emitter library
-upstream: https://pyyaml.org/wiki/LibYAML
-version: "0.2.5"
-license: MIT
-build-dependencies:
-  - clang
-  - musl
-runtime-dependencies:
-  - musl

@@ -1,9 +1,0 @@
-description: A minimal POSIX shell
-upstream: https://github.com/emersion/mrsh
-version: "master"
-license: MIT
-build-dependencies:
-  - clang
-  - make
-runtime-dependencies:
-  - musl
