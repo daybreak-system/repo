@@ -10,6 +10,8 @@ cd musl-1.2.6
 
 CC=clang \
 CFLAGS="-target x86_64-unknown-linux-musl -fuse-ld=lld" \
+AR=llvm-ar \
+RANLIB=llvm-ranlib \
 ./configure \
   --target=x86_64-unknown-linux-musl \
   --prefix=/usr \

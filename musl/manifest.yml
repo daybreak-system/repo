@@ -6,3 +6,5 @@ build-dependencies:
   - make
   - clang
   - lld
+  - llvm-ar
+  - llvm-ranlib
